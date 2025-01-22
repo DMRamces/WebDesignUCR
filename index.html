@@ -1,14 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer proyecto</title>
 </head>
 <body>
-    <h1>Este es mi primer proyecto HTML</h1>
-    <p>Puede usar ctrl + s para guardar.</p>
-    <div>¡Hola!</div>
+    <main>
+    <header>
+        <nav>
+            <ul style="list-style-type: none;">
+                <li style="display: inline; padding-right: 10px;"><a href="">Inicio</a></li>
+                <li style="display: inline; padding-right: 10px;"><a href="">Juegos</a></li>
+                <li style="display: inline; padding-right: 10px;"><a href="">Pintura minis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Bienvenido a mi página</h1> 
+    <img src="/assets/imagenes/fantasy_fluxx.jpg" width="auto" height="400px" alt="Una caja de Fantasy Fluxx mostrando un mago, un cazador, un guerrero y un dragón en posición de batalla. Al fondo, un bosque y un castillo.">
+    <img src="/assets/imagenes/tarotDnD.jpg" width="auto" height="400px" alt="Una caja de Tarot Deck de DnD. Un personaje meditando con aves sobres su cabeza y un vestido rojo en la portada.">
+
+    <section>
+        <h4>¿Tienes preguntas sobre mis juegos?</h4>
+        <form>
+            <label>Nombre:</label>
+            <input style="margin-bottom: 15px;" type="text">
+            <br>
+            <label>Email:</label>
+            <input style="margin-bottom: 15px;" type="email">
+            <br>
+            <label style="padding-bottom: 25px;">Pregunta:</label>
+            <input style="margin-bottom: 15px;"type="password">
+            <br>
+            <textarea></textarea>
+
+            <button>Enviar</button>
+        </form>
+    </section>
+    </main>
+
+    <footer>
+        <p>2025, Juegos de mesa Costa Rica,. Todos los derechos reservados.</p>
+    </footer>
+
+
     
+<!--
+    <p>Puede usar ctrl + s para guardar.</p>
+    <div>
+    <a href="/home.html" target="_self">soy un enlace</a>
+    <a href="https://api.whatsapp.com/send/?phone=50688114207&text=Agrega+aca+el+texto">telefono</a>
+    </div>
+-->
 </body>
 </html>
