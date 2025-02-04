@@ -1,2 +1,81 @@
-/* styles.css */
+body {
+    text-align: center;
+    background-color: #6b7e9b;
+    padding-left: 20%;
+    padding-right: 20%;
 
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding-right: 10px;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+.main-title {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 300%;
+    color: #ffffff;
+}
+
+.title {
+    color: #a43022;
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bold;
+}
+
+.parrafo-principal {
+    padding: 40px 100px;
+}
+
+/* Centrar imágenes */
+.fila {
+    display: flex;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    gap: 20px; /* Espacio entre las columnas */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la imagen y el botón dentro de la columna */
+    width: auto;
+    padding: 5px;
+}
+
+.imagen-muestra {
+    width: auto;
+    height: 400px;
+    max-width: 100%;
+}
+
+.boton-cta {
+    text-align: center;
+    border-color: #43639d;
+    background-color: transparent;
+    font-family:'Franklin Gothic Medium';
+    color: #43639d;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #febf35;
+}
+
+h3 {
+    padding: 40px 0 0 0;
+}
