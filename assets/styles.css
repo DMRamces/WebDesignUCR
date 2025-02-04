@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #6b7e9b;
+    background-color: #081b35;
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -21,11 +21,11 @@ input {
 .main-title {
     font-family: 'Franklin Gothic Medium';
     font-size: 300%;
-    color: #ffffff;
+    color: #febf35;
 }
 
 .title {
-    color: #a43022;
+    color: #febf35;
     font-size: 200%;
     font-family: 'Franklin Gothic Medium';
     font-weight: bold;
@@ -33,6 +33,7 @@ input {
 
 .parrafo-principal {
     padding: 40px 100px;
+    color: #f8f8ff;
 }
 
 /* Centrar imágenes */
@@ -59,10 +60,9 @@ input {
 
 .boton-cta {
     text-align: center;
-    border-color: #43639d;
+    border-color: #f2c329;
     background-color: transparent;
     font-family:'Franklin Gothic Medium';
-    color: #43639d;
     border-radius: 10px;
     width: 150px;
     height: 30px;
@@ -77,4 +77,13 @@ a{
 
 h3 {
     padding: 40px 0 0 0;
+}
+
+hr {
+    border-color: #f2c329;
+}
+
+.footer {
+    padding-top: 40px;
+    color: #f2c329;
 }
