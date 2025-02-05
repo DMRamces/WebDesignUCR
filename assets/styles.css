@@ -36,18 +36,17 @@ input {
     color: #f8f8ff;
 }
 
-/* Centrar imágenes */
 .fila {
     display: flex;
-    justify-content: center; /* Centra las columnas horizontalmente */
-    gap: 20px; /* Espacio entre las columnas */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .columna {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra la imagen y el botón dentro de la columna */
+    align-items: center;
     width: auto;
     padding: 5px;
 }
@@ -86,4 +85,46 @@ hr {
 .footer {
     padding-top: 40px;
     color: #f2c329;
+}
+
+
+/*Flex box*/
+.flex-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box {
+    margin: 20px;
+    width: auto;
+    text-align: center;
+}
+
+
+
+/* cod en clase*/
+.caja {
+    background-color: green;
+    /* equivalente a 1 rem para todos (top bottom left right) */
+    padding: 5px;
+    margin: 20px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: darkred;
+    width: 150px;
+    /* view width = ancho de mi vista */
+    height: 150px; 
+    /* view height = largo de mi vista*/
+    text-align: center;
+}
+
+.caja-padre {
+    background-color: #f2c329;
+    display: flex;
+    height: 1000px;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
 }
