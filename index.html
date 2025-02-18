@@ -4,45 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles.css">
+    <script src="./script.js"></script>
     <title>Juegos de mesa CR</title>
 </head>
 <body>
     <main>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./juegos.html">Juegos</a></li>
-                <li><a href="./pinturademinis.html">Pintura minis</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <h1 class="main-title">Bienvenido a Juegos de Mesa CR</h1> 
-    <p class="parrafo-principal">Hay muchos tipos de pasatiempos, pero muy pocos con la capacidad de compartirse con familia y amigos de forma amena y entretenida, con opciones tan variadas como temáticas existen.Hay muchos tipos de pasatiempos, pero muy pocos con la capacidad de compartirse con familia y amigos de forma amena y entretenida, con opciones tan variadas como temáticas existen.Hay muchos tipos de pasatiempos, pero muy pocos con la capacidad de compartirse con familia y amigos de forma amena y entretenida, con opciones tan variadas como temáticas existen.</p>
-    
-    
-    <div class="fila">
+        <header>
+            <nav class="navbar"> <!-- Nav bar -->
+                <div class="navbar-logo">
+                    <a href="./index.html">Juegos de Mesa CR</a>
+                </div>
+                <ul class="navbar-menu">
+                    <li><a href="./index.html" class="nav-link active">Inicio</a></li>
+                    <!--<li><a href="./juegos.html" class="nav-link">Juegos</a></li>-->
+                    <li><a href="./accesorios.html" class="nav-link">Accesorios</a></li>
+                    <li><a href="./galeria.html" class="nav-link">Galería</a></li>
+                    <li><a href="./contactanos.html" class="nav-link">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </header>
         
-        <div class="columna">
-          
+
+
+        <div class="hero"><!-- Hero Baner -->
+            <img src="./assets/imagenes/hero_banner_mobile.jpg" class="hero-mobile" alt="La imagen muestra un tablero de juegos y sobre ella piezas de colores y dos dados blancos.">
+            
+            <div class="hero-content">
+                <h1 class="main-title">Bienvenido a<br>Juegos de Mesa CR</h1>
+                <p>Descubre los mejores juegos para compartir en familia y amigos.</p>
+            </div>
+        </div>
+        
+    <div class="spacer"></div>
+    
+
+    <!-- Tiles -->
+    <div class="flex-main">
+        <!-- Tile 1 -->
+        <div class="tile">
+            <a href="#modal1" class="tile-link">
+                <img src="./assets/imagenes/tiles/tile1-all.jpg" alt="Una caja de Fantasy Fluxx mostrando un mago, un cazador, un guerrero y un dragón en posición de batalla. Al fondo, un bosque y un castillo.">
+                <div class="tile-overlay">
+                    <span class="tile-title">Party games</span>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Modal 1 -->
+        <div id="modal1" class="modal">
+            <div class="modal-contenido">
+                <a href="#" class="cerrar-modal">&times;</a>
+                <h2>Party games</h2>
+                <img class="tile" src="./assets/imagenes/juegos/codenames.png" alt="">
+                <p>Juegos de mesa diseñados para grupos grandes, generalmente rápidos y fáciles de aprender, donde la diversión y la interacción social son claves. Ejemplos: Codenames, La Resistencia.</p>
+                <button class="button-cta">Comprar ahora</button>
+            </div>
+        </div>
+    
+        <!-- Tile 2 -->
+        <div class="tile">
+            <a href="#modal2" class="tile-link">
+                <img src="./assets/imagenes/tiles/tile2-all.jpg" alt="Una caja con gangsters caricaturizados sosteniendo dinero y armas de forma cómica.">
+                <div class="tile-overlay">
+                    <span class="tile-title">Relleno (fillers)</span>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Modal 2 -->
+        <div id="modal2" class="modal">
+            <div class="modal-contenido">
+                <a href="#" class="cerrar-modal">&times;</a>
+                <h2>Relleno (fillers)</h2>
+                <img class="tile" src="./assets/imagenes/juegos/fantasy_fluxx.png" alt="">
+                <p> Juegos rápidos, perfectos para llenar el tiempo entre otros juegos más largos. Normalmente tienen reglas simples y partidas de 15 a 30 minutos. Ejemplos: Fluxx, Love Letter.</p>
+                <button class="button-cta">Comprar ahora</button>
+            </div>
         </div>
 
-        <div class="columna">
-          
-        </div>
-      
+
+        <!-- Tile 3 -->
+    <div class="tile">
+        <a href="#modal3" class="tile-link">
+            <img src="./assets/imagenes/tiles/tile3-all.jpg" alt="Una caja con gangsters caricaturizados sosteniendo dinero y armas de forma cómica.">
+            <div class="tile-overlay">
+                <span class="tile-title">Cooperativos</span>
+            </div>
+        </a>
     </div>
 
-    <div class="flex-main">
-        <div class="flex-box"><img src="./assets/imagenes/fantasy_fluxx.png" class="imagen-muestra" alt="Una caja de Fantasy Fluxx mostrando un mago, un cazador, un guerrero y un dragón en posición de batalla. Al fondo, un bosque y un castillo.">
-            <br>
-            <button class="boton-cta"><a href="https://boardgamegeek.com/boardgame/325409/fantasy-fluxx" target="_blank">Conoce más sobre mi</a></button></div>
-        <div class="flex-box"><img src="./assets/imagenes/CashNGuns.png" class="imagen-muestra" alt="Una caja con gangsters caricaturizados sosteniendo dinero y armas de forma cómica.">
-            <br>
-            <button class="boton-cta"><a href="https://boardgamegeek.com/boardgame/155362/ca-dollar-h-n-guns-second-edition" target="_blank">Conoce más sobre mi</a></button></div>
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-contenido">
+            <a href="#" class="cerrar-modal">&times;</a>
+            <h2>Cooperativos</h2>
+            <img class="tile" src="./assets/imagenes/juegos/isla_prohibida.png" alt="">
+            <p>Los jugadores trabajan juntos para lograr un objetivo común, a menudo enfrentándose a un desafío controlado por el juego. Ejemplos: Pandemic, Forbidden Island.</p>
+            <button class="button-cta">Comprar ahora</button>
         </div>
+    </div>
+
+    <!-- Tile 4 -->
+    <div class="tile">
+        <a href="#modal4" class="tile-link">
+            <img src="./assets/imagenes/tiles/tile4-all.jpg" alt="Una caja con gangsters caricaturizados sosteniendo dinero y armas de forma cómica.">
+            <div class="tile-overlay">
+                <span class="tile-title">Juegos de guerra</span>
+            </div>
+        </a>
+    </div>
     
+    </div>
+
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-contenido">
+            <a href="#" class="cerrar-modal">&times;</a>
+            <h2>Juegos de guerra</h2>
+            <img class="tile" src="./assets/imagenes/juegos/warhammer-40k.png" alt="">
+            <p>Juegos que simulan batallas y conflictos bélicos, a menudo con reglas complejas y miniaturas. Ejemplos: Warhammer 40K, Gaslands.</p>
+            <button class="button-cta">Comprar ahora</button>
+        </div>
+    </div>
+
+    
+
+<!--
     <section style="color: #febf35;">
         <h3 class="title">¿Tienes preguntas sobre los juegos?</h3>
         <form>
@@ -62,12 +150,7 @@
         </form>
     </section>
     </main>
-
-
-
-
-
-
+-->
     <footer class="footer">
         <hr>
         <p>2025, Juegos de mesa Costa Rica. Todos los derechos reservados.<br>Desarrollo: Utopía Creativa</p>

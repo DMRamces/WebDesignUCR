@@ -5,22 +5,17 @@ body {
     padding-right: 20%;
 }
 
-ul {
-    list-style-type: none;
-}
-
-li {
-    display: inline;
-    padding-right: 10px;
-}
-
-input {
-    margin-bottom: 15px;
+/* Body para movil (ancho máximo de 768px) */
+@media (max-width: 768px) {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .main-title {
     font-family: 'Franklin Gothic Medium';
-    font-size: 300%;
+    font-size: 250%;
     color: #febf35;
 }
 
@@ -29,11 +24,6 @@ input {
     font-size: 200%;
     font-family: 'Franklin Gothic Medium';
     font-weight: bold;
-}
-
-.parrafo-principal {
-    padding: 40px 100px;
-    color: #f8f8ff;
 }
 
 .fila {
@@ -50,14 +40,14 @@ input {
     width: auto;
     padding: 5px;
 }
-
+/*
 .imagen-muestra {
     width: auto;
     height: 400px;
     max-width: 100%;
-}
+}*/
 
-.boton-cta {
+.button-cta {
     text-align: center;
     border-color: #f2c329;
     background-color: transparent;
@@ -67,12 +57,12 @@ input {
     height: 30px;
     margin-top: 10px;
     cursor: pointer;
-}
+ }
 
-a{
-    text-decoration: none;
+ .button-cta > a {
     color: #febf35;
-}
+    text-decoration: none;
+ }
 
 h3 {
     padding: 40px 0 0 0;
@@ -89,7 +79,7 @@ hr {
 
 
 /*Flex box*/
-.flex-main {
+.flex-main { 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -97,12 +87,18 @@ hr {
 }
 
 .flex-box {
-    margin: 20px;
-    width: auto;
+    margin: 10px;
+    height: auto;
+    object-fit: contain;
     text-align: center;
 }
 
-
+.flex-box img {
+    padding: 10px;
+    object-fit: contain;
+    width: auto;
+    height: 250px;
+}
 
 /* cod en clase*/
 .caja {
@@ -127,4 +123,373 @@ hr {
     flex-direction: row;
     align-items: start;
     justify-content: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #febf35;
+    align-items: center;
+}
+
+/* Nav Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #081b35;
+    border-bottom: 2px solid #f2c329;
+}
+
+/* Texto Home */
+.navbar-logo a {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 24px;
+    color: #febf35;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Menú */
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 18px;
+    color: #f8f8ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f2c329;
+}
+
+/* NavBar para movil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar-logo {
+        margin-bottom: 10px;
+    }
+}
+
+.nav-link.active {
+    position: relative;
+    color: #f2c329;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #f2c329;
+    border-radius: 2px;
+}
+
+.nav-link:hover {
+    color: #f2c329;
+}
+
+/* Hero para desktop/movil */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 400px;
+    background-image: url('./imagenes/hero_banner_desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-left: 5%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 35%;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero para movil */
+@media (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        background: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hero-content {
+        max-width: 90%;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+.hero-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hero-mobile {
+        display: block;
+    }
+}
+
+/* Espaciador para desktop/tablet */
+.spacer {
+    padding-top: 50px;
+}
+
+/* Espaciador para móvil */
+@media (max-width: 768px) {
+    .spacer {
+        padding-top: 20px;
+    }
+}
+
+/* Tile container */
+.flex-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilos por tile */
+.tile {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen del tile */
+.tile img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+/* Overlay del tile */
+.tile-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+/* Texto del tile */
+.tile-title {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover */
+.tile:hover .tile-overlay {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.tile:hover .tile-title {
+    color: #f2c329;
+}
+
+.tile:hover img {
+    opacity: 0.8;
+}
+
+/* Enlace del tile */
+.tile-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Para mantenerlo oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Colocar encima de los demás objetos */
+}
+
+.modal:target {
+    display: flex; 
+}
+
+.modal-contenido {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cierre del modal */
+.cerrar-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+}
+
+.cerrar-modal:hover {
+    color: #f2c329;
+}
+
+
+/* Contacto */
+.contacto {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8ff;
+    color: #081b35;
+}
+
+.contacto h1 {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 36px;
+    color: #f2c329;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Formulario contacto */
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 18px;
+    color: #081b35;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Boton enviar */
+.enviar-cta {
+    background-color: #f2c329;
+    color: #081b35;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enviar-cta:hover {
+    background-color: #e0b324;
+}
+
+/* Para movil (ancho máximo de 768px) */
+@media (max-width: 768px) {
+    .contacto {
+        padding: 5px 0;
+    }
+
+    .formulario-contacto {
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 20px 15px;
+        margin: 0;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px; /* Fuente más pequeña para móviles */
+    }
+
+    .enviar-cta {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
 }
