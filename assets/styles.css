@@ -540,3 +540,74 @@ hr {
         margin: 0 8px;
     }
 }
+
+/* Tema Oscuro*/
+body.tema-oscuro {
+    background-color: #081b35;
+    color: #ffffff;
+}
+
+body.tema-oscuro .navbar {
+    background-color: #081b35;
+    border-bottom: 2px solid #f2c329;
+}
+
+body.tema-oscuro .nav-link {
+    color: #f8f8ff;
+}
+
+body.tema-oscuro .nav-link:hover {
+    color: #f2c329;
+}
+
+body.tema-oscuro .footer {
+    background-color: #081b35;
+    color: #f2c329;
+}
+
+body.tema-oscuro .footer hr {
+    border-color: #f2c329;
+}
+
+/* Estilos para el tema claro */
+body.tema-claro {
+    background-color: #ffffff;
+    color: #081b35;
+}
+
+body.tema-claro .navbar {
+    background-color: #f8f8ff;
+    border-bottom: 2px solid #f2c329;
+}
+
+body.tema-claro .nav-link {
+    color: #081b35;
+}
+
+body.tema-claro .nav-link:hover {
+    color: #f2c329;
+}
+
+body.tema-claro .footer {
+    background-color: #f8f8ff;
+    color: #081b35;
+}
+
+body.tema-claro .footer hr {
+    border-color: #081b35;
+}
+
+/* Cambio de tema */
+.boton-tema {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: inherit;
+    transition: transform 0.3s ease;
+    margin-left: 20px;
+}
+
+.boton-tema:hover {
+    transform: scale(1.1);
+}
