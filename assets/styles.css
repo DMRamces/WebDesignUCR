@@ -205,6 +205,7 @@ hr {
     color: #f2c329;
 }
 
+
 /* Hero para desktop/movil */
 .hero {
     display: flex;
@@ -569,7 +570,7 @@ body.tema-oscuro .footer hr {
     border-color: #f2c329;
 }
 
-/* Estilos para el tema claro */
+/* Tema Claro */
 body.tema-claro {
     background-color: #ffffff;
     color: #081b35;
